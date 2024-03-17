@@ -1,15 +1,15 @@
 <?php
 
-if (file_exists('TelegramErrorLogger.php')) {
-    require_once 'TelegramErrorLogger.php';
+if (file_exists('BaleBotErrorLogger.php')) {
+    require_once 'BaleBotErrorLogger.php';
 }
 
 /**
- * Telegram Bot Class.
+ * Bale Bot Class.
  *
- * @author Gabriele Grillo <gabry.grillo@alice.it>
+ * @author Amirreza Shafiee <amirreza18121832@gmail.com>
  */
-class Telegram
+class BaleBot
 {
     /**
      * Constant for type Inline Query.
@@ -94,7 +94,7 @@ class Telegram
     /// Class constructor
 
     /**
-     * Create a Telegram instance from the bot token
+     * Create a BaleBot instance from the bot token
      * \param $bot_token the bot token
      * \param $log_errors enable or disable the logging
      * \param $proxy array with the proxy configuration (url, port, type, auth)
@@ -119,7 +119,7 @@ class Telegram
      */
     public function endpoint($api, array $content, $post = true)
     {
-        $url = 'https://api.telegram.org/bot'.$this->bot_token.'/'.$api;
+        $url = 'https://tapi.bale.ai/bot'.$this->bot_token.'/'.$api;
         if ($post) {
             $reply = $this->sendAPIRequest($url, $content);
         } else {
