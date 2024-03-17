@@ -1,4 +1,4 @@
-# TelegramBotPHP
+# BaleBotPHP
 [![API](https://img.shields.io/badge/Telegram%20Bot%20API-April%2016%2C%202022-36ade1.svg)](https://core.telegram.org/bots/api)
 ![PHP](https://img.shields.io/badge/php-%3E%3D5.3-8892bf.svg)
 ![CURL](https://img.shields.io/badge/cURL-required-green.svg)
@@ -7,19 +7,18 @@
 [![License](https://poser.pugx.org/eleirbag89/telegrambotphp/license)](https://packagist.org/packages/eleirbag89/telegrambotphp)
 [![StyleCI](https://styleci.io/repos/38492095/shield?branch=master)](https://styleci.io/repos/38492095)
 
-A very simple PHP [Telegram Bot API](https://core.telegram.org/bots).    
-Compliant with the April 16, 2022 Telegram Bot API update.
+A very simple PHP class for creating *Bale API Bot*.
+Compliant with [Bale Bot API](https://docs.bale.ai/).
 
 Requirements
 ---------
 
 * PHP >= 5.3
 * Curl extension for PHP5 must be enabled.
-* Telegram API key, you can get one simply with [@BotFather](https://core.telegram.org/bots#botfather) with simple commands right after creating your bot.
+* Bale API key, you can get one simply with [@BotFather](https://ble.ir/botfather) with simple commands right after creating your bot.
 
 For the WebHook:
-* An VALID SSL certificate (Telegram API requires this). You can use [Cloudflare's Free Flexible SSL](https://www.cloudflare.com/ssl) which crypts the web traffic from end user to their proxies if you're using CloudFlare DNS.    
-Since the August 29 update you can use a self-signed ssl certificate.
+* An VALID SSL certificate (Bale API requires this). You can use CDNs such as arvancloud or cloudflare which gives free ssl services.
 
 For the getUpdates(Long Polling):
 * Some way to execute the script in order to serve messages (for example cronjob)
