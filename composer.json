@@ -1,11 +1,11 @@
 {
-    "name": "eleirbag89/telegrambotphp",
-    "description": "A very simple PHP Telegram Bot API",
+    "name": "alefaheen/balebotphp",
+    "description": "A very simple PHP class to creating Bale API Bots",
     "type": "library",
     "authors": [
         {
-            "name": "Gabriele Grillo",
-            "email": "gabry.grillo@alice.it"
+            "name": "Amirreza Shafiee",
+            "email": "amirreza18121382@gmail.com"
         }
     ],
     "license": "MIT",
@@ -16,6 +16,6 @@
         "ext-curl": "*"
     },
     "autoload": {
-        "files": ["Telegram.php", "TelegramErrorLogger.php"]
+        "files": ["BaleBot.php", "BaleBotErrorLogger.php"]
     }
 }
