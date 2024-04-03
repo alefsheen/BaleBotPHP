@@ -108,14 +108,14 @@ class BaleBot
         $this->proxy = $proxy;
     }
 
-    /// Do requests to Telegram Bot API
+    /// Do requests to Bale Bot API
 
     /**
      * Contacts the various API's endpoints
      * \param $api the API endpoint
      * \param $content the request parameters as array
      * \param $post boolean tells if $content needs to be sends
-     * \return the JSON Telegram's reply.
+     * \return the JSON Bale's reply.
      */
     public function endpoint($api, array $content, $post = true)
     {
@@ -132,8 +132,8 @@ class BaleBot
     /// A method for testing your bot.
 
     /**
-     * See <a href="https://core.telegram.org/bots/api#getme">getMe</a>
-     * \return the JSON Telegram's reply.
+     * See <a href="https://docs.bale.ai/#getme">getMe</a>
+     * \return the JSON Bale's reply.
      */
     public function getMe()
     {
@@ -141,8 +141,8 @@ class BaleBot
     }
 
     /**
-     * See <a href="https://core.telegram.org/bots/api#logout">logOut</a>
-     * \return the JSON Telegram's reply.
+     * See <a href="https://docs.bale.ai/#logout">logOut</a>
+     * \return the JSON Bale's reply.
      */
     public function logOut()
     {
@@ -150,8 +150,8 @@ class BaleBot
     }
 
     /**
-     * See <a href="https://core.telegram.org/bots/api#close">close</a>
-     * \return the JSON Telegram's reply.
+     * See <a href="https://docs.bale.ai/#close">close</a>
+     * \return the JSON Bale's reply.
      */
     public function close()
     {
@@ -173,9 +173,9 @@ class BaleBot
     /// Send a message
 
     /**
-     * See <a href="https://core.telegram.org/bots/api#sendmessage">sendMessage</a> for the input values
+     * See <a href="https://docs.bale.ai/#sendmessage">sendMessage</a> for the input values
      * \param $content the request parameters as array
-     * \return the JSON Telegram's reply.
+     * \return the JSON Bale's reply.
      */
     public function sendMessage(array $content)
     {
@@ -185,9 +185,9 @@ class BaleBot
     /// Copy a message
 
     /**
-     * See <a href="https://core.telegram.org/bots/api#copymessage">copyMessage</a> for the input values
+     * See <a href="https://docs.bale.ai/#copymessage">copyMessage</a> for the input values
      * \param $content the request parameters as array
-     * \return the JSON Telegram's reply.
+     * \return the JSON Bale's reply.
      */
     public function copyMessage(array $content)
     {
@@ -197,9 +197,9 @@ class BaleBot
     /// Forward a message
 
     /**
-     * See <a href="https://core.telegram.org/bots/api#forwardmessage">forwardMessage</a> for the input values
+     * See <a href="https://docs.bale.ai/#forwardmessage">forwardMessage</a> for the input values
      * \param $content the request parameters as array
-     * \return the JSON Telegram's reply.
+     * \return the JSON Bale's reply.
      */
     public function forwardMessage(array $content)
     {
@@ -209,9 +209,9 @@ class BaleBot
     /// Send a photo
 
     /**
-     * See <a href="https://core.telegram.org/bots/api#sendphoto">sendPhoto</a> for the input values
+     * See <a href="https://docs.bale.ai/#sendphoto">sendPhoto</a> for the input values
      * \param $content the request parameters as array
-     * \return the JSON Telegram's reply.
+     * \return the JSON Bale's reply.
      */
     public function sendPhoto(array $content)
     {
@@ -221,9 +221,9 @@ class BaleBot
     /// Send an audio
 
     /**
-     * See <a href="https://core.telegram.org/bots/api#sendaudio">sendAudio</a> for the input values
+     * See <a href="https://docs.bale.ai/#sendaudio">sendAudio</a> for the input values
      * \param $content the request parameters as array
-     * \return the JSON Telegram's reply.
+     * \return the JSON Bale's reply.
      */
     public function sendAudio(array $content)
     {
@@ -233,9 +233,9 @@ class BaleBot
     /// Send a document
 
     /**
-     * See <a href="https://core.telegram.org/bots/api#senddocument">sendDocument</a> for the input values
+     * See <a href="https://docs.bale.ai/#senddocument">sendDocument</a> for the input values
      * \param $content the request parameters as array
-     * \return the JSON Telegram's reply.
+     * \return the JSON Bale's reply.
      */
     public function sendDocument(array $content)
     {
@@ -245,9 +245,9 @@ class BaleBot
     /// Send an animation
 
     /**
-     * See <a href="https://core.telegram.org/bots/api#sendanimation">sendAnimation</a> for the input values
+     * See <a href="https://docs.bale.ai/#sendanimation">sendAnimation</a> for the input values
      * \param $content the request parameters as array
-     * \return the JSON Telegram's reply.
+     * \return the JSON Bale's reply.
      */
     public function sendAnimation(array $content)
     {
@@ -257,9 +257,9 @@ class BaleBot
     /// Send a sticker
 
     /**
-     * See <a href="https://core.telegram.org/bots/api#sendsticker">sendSticker</a> for the input values
+     * See <a href="https://docs.bale.ai/#sendsticker">sendSticker</a> for the input values
      * \param $content the request parameters as array
-     * \return the JSON Telegram's reply.
+     * \return the JSON Bale's reply.
      */
     public function sendSticker(array $content)
     {
@@ -269,9 +269,9 @@ class BaleBot
     /// Send a video
 
     /**
-     * See <a href="https://core.telegram.org/bots/api#sendvideo">sendVideo</a> for the input values
+     * See <a href="https://docs.bale.ai/#sendvideo">sendVideo</a> for the input values
      * \param $content the request parameters as array
-     * \return the JSON Telegram's reply.
+     * \return the JSON Bale's reply.
      */
     public function sendVideo(array $content)
     {
@@ -281,9 +281,9 @@ class BaleBot
     /// Send a voice message
 
     /**
-     * See <a href="https://core.telegram.org/bots/api#sendvoice">sendVoice</a> for the input values
+     * See <a href="https://docs.bale.ai/#sendvoice">sendVoice</a> for the input values
      * \param $content the request parameters as array
-     * \return the JSON Telegram's reply.
+     * \return the JSON Bale's reply.
      */
     public function sendVoice(array $content)
     {
@@ -293,45 +293,21 @@ class BaleBot
     /// Send a location
 
     /**
-     * See <a href="https://core.telegram.org/bots/api#sendlocation">sendLocation</a> for the input values
+     * See <a href="https://docs.bale.ai/#sendlocation">sendLocation</a> for the input values
      * \param $content the request parameters as array
-     * \return the JSON Telegram's reply.
+     * \return the JSON Bale's reply.
      */
     public function sendLocation(array $content)
     {
         return $this->endpoint('sendLocation', $content);
     }
 
-    /// Edit Message Live Location
-
-    /**
-     * See <a href="https://core.telegram.org/bots/api#editmessageliveLocation">editMessageLiveLocation</a> for the input values
-     * \param $content the request parameters as array
-     * \return the JSON Telegram's reply.
-     */
-    public function editMessageLiveLocation(array $content)
-    {
-        return $this->endpoint('editMessageLiveLocation', $content);
-    }
-
-    /// Stop Message Live Location
-
-    /**
-     * See <a href="https://core.telegram.org/bots/api#stopmessagelivelocation">stopMessageLiveLocation</a> for the input values
-     * \param $content the request parameters as array
-     * \return the JSON Telegram's reply.
-     */
-    public function stopMessageLiveLocation(array $content)
-    {
-        return $this->endpoint('stopMessageLiveLocation', $content);
-    }
-
     /// Set Chat Sticker Set
 
     /**
-     * See <a href="https://core.telegram.org/bots/api#setchatstickerset">setChatStickerSet</a> for the input values
+     * See <a href="https://docs.bale.ai/#setchatstickerset">setChatStickerSet</a> for the input values
      * \param $content the request parameters as array
-     * \return the JSON Telegram's reply.
+     * \return the JSON Bale's reply.
      */
     public function setChatStickerSet(array $content)
     {
@@ -341,9 +317,9 @@ class BaleBot
     /// Delete Chat Sticker Set
 
     /**
-     * See <a href="https://core.telegram.org/bots/api#deletechatstickerset">deleteChatStickerSet</a> for the input values
+     * See <a href="https://docs.bale.ai/#deletechatstickerset">deleteChatStickerSet</a> for the input values
      * \param $content the request parameters as array
-     * \return the JSON Telegram's reply.
+     * \return the JSON Bale's reply.
      */
     public function deleteChatStickerSet(array $content)
     {
@@ -353,9 +329,9 @@ class BaleBot
     /// Send Media Group
 
     /**
-     * See <a href="https://core.telegram.org/bots/api#sendmediagroup">sendMediaGroup</a> for the input values
+     * See <a href="https://docs.bale.ai/#sendmediagroup">sendMediaGroup</a> for the input values
      * \param $content the request parameters as array
-     * \return the JSON Telegram's reply.
+     * \return the JSON Bale's reply.
      */
     public function sendMediaGroup(array $content)
     {
@@ -365,9 +341,9 @@ class BaleBot
     /// Send Venue
 
     /**
-     * See <a href="https://core.telegram.org/bots/api#sendvenue">sendVenue</a> for the input values
+     * See <a href="https://docs.bale.ai/#sendvenue">sendVenue</a> for the input values
      * \param $content the request parameters as array
-     * \return the JSON Telegram's reply.
+     * \return the JSON Bale's reply.
      */
     public function sendVenue(array $content)
     {
@@ -377,9 +353,9 @@ class BaleBot
     //Send contact
 
     /**
-     * See <a href="https://core.telegram.org/bots/api#sendcontact">sendContact</a> for the input values
+     * See <a href="https://docs.bale.ai/#sendcontact">sendContact</a> for the input values
      * \param $content the request parameters as array
-     * \return the JSON Telegram's reply.
+     * \return the JSON Bale's reply.
      */
     public function sendContact(array $content)
     {
@@ -389,9 +365,9 @@ class BaleBot
     //Send a poll
 
     /**
-     * See <a href="https://core.telegram.org/bots/api#sendpoll">sendPoll</a> for the input values
+     * See <a href="https://docs.bale.ai/#sendpoll">sendPoll</a> for the input values
      * \param $content the request parameters as array
-     * \return the JSON Telegram's reply.
+     * \return the JSON Bale's reply.
      */
     public function sendPoll(array $content)
     {
@@ -401,9 +377,9 @@ class BaleBot
     //Send a dice
 
     /**
-     * See <a href="https://core.telegram.org/bots/api#senddice">sendDice</a> for the input values
+     * See <a href="https://docs.bale.ai/#senddice">sendDice</a> for the input values
      * \param $content the request parameters as array
-     * \return the JSON Telegram's reply.
+     * \return the JSON Bale's reply.
      */
     public function sendDice(array $content)
     {
@@ -413,9 +389,9 @@ class BaleBot
     /// Send a chat action
 
     /**
-     * See <a href="https://core.telegram.org/bots/api#sendchataction">sendChatAction</a> for the input values
+     * See <a href="https://docs.bale.ai/#sendchataction">sendChatAction</a> for the input values
      * \param $content the request parameters as array
-     * \return the JSON Telegram's reply.
+     * \return the JSON Bale's reply.
      */
     public function sendChatAction(array $content)
     {
@@ -425,9 +401,9 @@ class BaleBot
     /// Get a list of profile pictures for a user
 
     /**
-     * See <a href="https://core.telegram.org/bots/api#getuserprofilephotos">getUserProfilePhotos</a> for the input values
+     * See <a href="https://docs.bale.ai/#getuserprofilephotos">getUserProfilePhotos</a> for the input values
      * \param $content the request parameters as array
-     * \return the JSON Telegram's reply.
+     * \return the JSON Bale's reply.
      */
     public function getUserProfilePhotos(array $content)
     {
@@ -439,7 +415,7 @@ class BaleBot
     /**
      *  Use this method to get basic info about a file and prepare it for downloading. For the moment, bots can download files of up to 20MB in size. On success, a File object is returned. The file can then be downloaded via the link https://api.telegram.org/file/bot<token>/<file_path>, where <file_path> is taken from the response. It is guaranteed that the link will be valid for at least 1 hour. When the link expires, a new one can be requested by calling getFile again.
      * \param $file_id String File identifier to get info about
-     * \return the JSON Telegram's reply.
+     * \return the JSON Bale's reply.
      */
     public function getFile($file_id)
     {
@@ -453,7 +429,7 @@ class BaleBot
     /**
      * Deprecated
      * \param $content the request parameters as array
-     * \return the JSON Telegram's reply.
+     * \return the JSON Bale's reply.
      */
     public function kickChatMember(array $content)
     {
@@ -463,9 +439,9 @@ class BaleBot
     /// Leave Chat
 
     /**
-     * See <a href="https://core.telegram.org/bots/api#leavechat">leaveChat</a> for the input values
+     * See <a href="https://docs.bale.ai/#leavechat">leaveChat</a> for the input values
      * \param $content the request parameters as array
-     * \return the JSON Telegram's reply.
+     * \return the JSON Bale's reply.
      */
     public function leaveChat(array $content)
     {
@@ -475,9 +451,9 @@ class BaleBot
     /// Ban Chat Member
 
     /**
-     * See <a href="https://core.telegram.org/bots/api#banchatmember">banChatMember</a> for the input values
+     * See <a href="https://docs.bale.ai/#banchatmember">banChatMember</a> for the input values
      * \param $content the request parameters as array
-     * \return the JSON Telegram's reply.
+     * \return the JSON Bale's reply.
      */
     public function banChatMember(array $content)
     {
@@ -487,9 +463,9 @@ class BaleBot
     /// Unban Chat Member
 
     /**
-     * See <a href="https://core.telegram.org/bots/api#unbanchatmember">unbanChatMember</a> for the input values
+     * See <a href="https://docs.bale.ai/#unbanchatmember">unbanChatMember</a> for the input values
      * \param $content the request parameters as array
-     * \return the JSON Telegram's reply.
+     * \return the JSON Bale's reply.
      */
     public function unbanChatMember(array $content)
     {
@@ -499,9 +475,9 @@ class BaleBot
     /// Get Chat Information
 
     /**
-     * See <a href="https://core.telegram.org/bots/api#getchat">getChat</a> for the input values
+     * See <a href="https://docs.bale.ai/#getchat">getChat</a> for the input values
      * \param $content the request parameters as array
-     * \return the JSON Telegram's reply.
+     * \return the JSON Bale's reply.
      */
     public function getChat(array $content)
     {
@@ -511,9 +487,9 @@ class BaleBot
     /// Get chat Administrators
 
     /**
-     * See <a href="https://core.telegram.org/bots/api#getchatadministrators">getChatAdministrators</a> for the input values
+     * See <a href="https://docs.bale.ai/#getchatadministrators">getChatAdministrators</a> for the input values
      * \param $content the request parameters as array
-     * \return the JSON Telegram's reply.
+     * \return the JSON Bale's reply.
      */
     public function getChatAdministrators(array $content)
     {
@@ -523,9 +499,9 @@ class BaleBot
     /// Get chat member count
 
     /**
-     * See <a href="https://core.telegram.org/bots/api#getchatmembercount">getChatMemberCount</a> for the input values
+     * See <a href="https://docs.bale.ai/#getchatmembercount">getChatMemberCount</a> for the input values
      * \param $content the request parameters as array
-     * \return the JSON Telegram's reply.
+     * \return the JSON Bale's reply.
      */
     public function getChatMemberCount(array $content)
     {
@@ -535,7 +511,7 @@ class BaleBot
     /**
      * For retrocompatibility
      * \param $content the request parameters as array
-     * \return the JSON Telegram's reply.
+     * \return the JSON Bale's reply.
      */
     public function getChatMembersCount(array $content)
     {
@@ -543,9 +519,9 @@ class BaleBot
     }
 
     /**
-     * See <a href="https://core.telegram.org/bots/api#getchatmember">getChatMember</a> for the input values
+     * See <a href="https://docs.bale.ai/#getchatmember">getChatMember</a> for the input values
      * \param $content the request parameters as array
-     * \return the JSON Telegram's reply.
+     * \return the JSON Bale's reply.
      */
     public function getChatMember(array $content)
     {
@@ -553,9 +529,9 @@ class BaleBot
     }
 
     /**
-     * See <a href="https://core.telegram.org/bots/api#answerinlinequery">answerInlineQuery</a> for the input values
+     * See <a href="https://docs.bale.ai/#answerinlinequery">answerInlineQuery</a> for the input values
      * \param $content the request parameters as array
-     * \return the JSON Telegram's reply.
+     * \return the JSON Bale's reply.
      */
     public function answerInlineQuery(array $content)
     {
@@ -565,9 +541,9 @@ class BaleBot
     /// Set Game Score
 
     /**
-     * See <a href="https://core.telegram.org/bots/api#setgamescore">setGameScore</a> for the input values
+     * See <a href="https://docs.bale.ai/#setgamescore">setGameScore</a> for the input values
      * \param $content the request parameters as array
-     * \return the JSON Telegram's reply.
+     * \return the JSON Bale's reply.
      */
     public function setGameScore(array $content)
     {
@@ -577,9 +553,9 @@ class BaleBot
     /// Get Game Hi Scores
 
     /**
-     * See <a href="https://core.telegram.org/bots/api#getgamehighscores">getGameHighScores</a> for the input values
+     * See <a href="https://docs.bale.ai/#getgamehighscores">getGameHighScores</a> for the input values
      * \param $content the request parameters as array
-     * \return the JSON Telegram's reply.
+     * \return the JSON Bale's reply.
      */
     public function getGameHighScores(array $content)
     {
@@ -589,9 +565,9 @@ class BaleBot
     /// Answer a callback Query
 
     /**
-     * See <a href="https://core.telegram.org/bots/api#answercallbackquery">answerCallbackQuery</a> for the input values
+     * See <a href="https://docs.bale.ai/#answercallbackquery">answerCallbackQuery</a> for the input values
      * \param $content the request parameters as array
-     * \return the JSON Telegram's reply.
+     * \return the JSON Bale's reply.
      */
     public function answerCallbackQuery(array $content)
     {
@@ -601,9 +577,9 @@ class BaleBot
     /// Set the list of the bot commands
 
     /**
-     * See <a href="https://core.telegram.org/bots/api#setmycommands">setMyCommands</a> for the input values
+     * See <a href="https://docs.bale.ai/#setmycommands">setMyCommands</a> for the input values
      * \param $content the request parameters as array
-     * \return the JSON Telegram's reply.
+     * \return the JSON Bale's reply.
      */
     public function setMyCommands(array $content)
     {
@@ -613,9 +589,9 @@ class BaleBot
     /// Delete the list of the bot commands
 
     /**
-     * See <a href="https://core.telegram.org/bots/api#deletemycommands">deleteMyCommands</a> for the input values
+     * See <a href="https://docs.bale.ai/#deletemycommands">deleteMyCommands</a> for the input values
      * \param $content the request parameters as array
-     * \return the JSON Telegram's reply.
+     * \return the JSON Bale's reply.
      */
     public function deleteMyCommands(array $content)
     {
@@ -625,9 +601,9 @@ class BaleBot
     /// Get the list of the bot commands
 
     /**
-     * See <a href="https://core.telegram.org/bots/api#getmycommands">getMyCommands</a> for the input values
+     * See <a href="https://docs.bale.ai/#getmycommands">getMyCommands</a> for the input values
      * \param $content the request parameters as array
-     * \return the JSON Telegram's reply.
+     * \return the JSON Bale's reply.
      */
     public function getMyCommands(array $content)
     {
@@ -637,9 +613,9 @@ class BaleBot
     /// Set the chat menu button
 
     /**
-     * See <a href="https://core.telegram.org/bots/api#setchatmenubutton">setChatMenuButton</a> for the input values
+     * See <a href="https://docs.bale.ai/#setchatmenubutton">setChatMenuButton</a> for the input values
      * \param $content the request parameters as array
-     * \return the JSON Telegram's reply.
+     * \return the JSON Bale's reply.
      */
     public function setChatMenuButton(array $content)
     {
@@ -649,9 +625,9 @@ class BaleBot
     /// Get the chat menu button
 
     /**
-     * See <a href="https://core.telegram.org/bots/api#getchatmenubutton">getChatMenuButton</a> for the input values
+     * See <a href="https://docs.bale.ai/#getchatmenubutton">getChatMenuButton</a> for the input values
      * \param $content the request parameters as array
-     * \return the JSON Telegram's reply.
+     * \return the JSON Bale's reply.
      */
     public function getChatMenuButton(array $content)
     {
@@ -661,9 +637,9 @@ class BaleBot
     /// Set the default aministrator rights
 
     /**
-     * See <a href="https://core.telegram.org/bots/api#setmydefaultadministratorrights">setMyDefaultAdministratorRights</a> for the input values
+     * See <a href="https://docs.bale.ai/#setmydefaultadministratorrights">setMyDefaultAdministratorRights</a> for the input values
      * \param $content the request parameters as array
-     * \return the JSON Telegram's reply.
+     * \return the JSON Bale's reply.
      */
     public function setMyDefaultAdministratorRights(array $content)
     {
@@ -673,9 +649,9 @@ class BaleBot
     /// Get the default aministrator rights
 
     /**
-     * See <a href="https://core.telegram.org/bots/api#getmydefaultadministratorrights">getMyDefaultAdministratorRights</a> for the input values
+     * See <a href="https://docs.bale.ai/#getmydefaultadministratorrights">getMyDefaultAdministratorRights</a> for the input values
      * \param $content the request parameters as array
-     * \return the JSON Telegram's reply.
+     * \return the JSON Bale's reply.
      */
     public function getMyDefaultAdministratorRights(array $content)
     {
@@ -683,9 +659,9 @@ class BaleBot
     }
 
     /**
-     * See <a href="https://core.telegram.org/bots/api#editmessagetext">editMessageText</a> for the input values
+     * See <a href="https://docs.bale.ai/#editmessagetext">editMessageText</a> for the input values
      * \param $content the request parameters as array
-     * \return the JSON Telegram's reply.
+     * \return the JSON Bale's reply.
      */
     public function editMessageText(array $content)
     {
@@ -693,9 +669,9 @@ class BaleBot
     }
 
     /**
-     * See <a href="https://core.telegram.org/bots/api#editmessagecaption">editMessageCaption</a> for the input values
+     * See <a href="https://docs.bale.ai/#editmessagecaption">editMessageCaption</a> for the input values
      * \param $content the request parameters as array
-     * \return the JSON Telegram's reply.
+     * \return the JSON Bale's reply.
      */
     public function editMessageCaption(array $content)
     {
@@ -703,9 +679,9 @@ class BaleBot
     }
 
     /**
-     * See <a href="https://core.telegram.org/bots/api#editmessagemedia">editMessageMedia</a> for the input values
+     * See <a href="https://docs.bale.ai/#editmessagemedia">editMessageMedia</a> for the input values
      * \param $content the request parameters as array
-     * \return the JSON Telegram's reply.
+     * \return the JSON Bale's reply.
      */
     public function editMessageMedia(array $content)
     {
@@ -713,9 +689,9 @@ class BaleBot
     }
 
     /**
-     * See <a href="https://core.telegram.org/bots/api#editmessagereplymarkup">editMessageReplyMarkup</a> for the input values
+     * See <a href="https://docs.bale.ai/#editmessagereplymarkup">editMessageReplyMarkup</a> for the input values
      * \param $content the request parameters as array
-     * \return the JSON Telegram's reply.
+     * \return the JSON Bale's reply.
      */
     public function editMessageReplyMarkup(array $content)
     {
@@ -723,9 +699,9 @@ class BaleBot
     }
 
     /**
-     * See <a href="https://core.telegram.org/bots/api#stoppoll">stopPoll</a> for the input values
+     * See <a href="https://docs.bale.ai/#stoppoll">stopPoll</a> for the input values
      * \param $content the request parameters as array
-     * \return the JSON Telegram's reply.
+     * \return the JSON Bale's reply.
      */
     public function stopPoll(array $content)
     {
@@ -760,7 +736,7 @@ class BaleBot
      * If you'd like to make sure that the Webhook request comes from Telegram, we recommend using a secret path in the URL, e.g. https://www.example.com/<token>. Since nobody else knows your botâ€˜s token, you can be pretty sure itâ€™s us.
      * \param $url String HTTPS url to send updates to. Use an empty string to remove webhook integration
      * \param $certificate InputFile Upload your public key certificate so that the root certificate in use can be checked
-     * \return the JSON Telegram's reply.
+     * \return the JSON Bale's reply.
      */
     public function setWebhook($url, $certificate = '')
     {
@@ -776,8 +752,8 @@ class BaleBot
     /// Delete the WebHook for the bot
 
     /**
-     *  Use this method to remove webhook integration if you decide to switch back to <a href="https://core.telegram.org/bots/api#getupdates">getUpdates</a>. Returns True on success. Requires no parameters.
-     * \return the JSON Telegram's reply.
+     *  Use this method to remove webhook integration if you decide to switch back to <a href="https://docs.bale.ai/#getupdates">getUpdates</a>. Returns True on success. Requires no parameters.
+     * \return the JSON Bale's reply.
      */
     public function deleteWebhook()
     {
@@ -1190,7 +1166,7 @@ class BaleBot
      * \param $switch_inline_query String Optional. If set, pressing the button will prompt the user to select one of their chats, open that chat and insert the bot‘s username and the specified inline query in the input field. Can be empty, in which case just the bot’s username will be inserted.
      * \param $switch_inline_query_current_chat String Optional. Optional. If set, pressing the button will insert the bot‘s username and the specified inline query in the current chat's input field. Can be empty, in which case only the bot’s username will be inserted.
      * \param $callback_game  String Optional. Description of the game that will be launched when the user presses the button.
-     * \param $pay  Boolean Optional. Specify True, to send a <a href="https://core.telegram.org/bots/api#payments">Pay button</a>.
+     * \param $pay  Boolean Optional. Specify True, to send a <a href="https://docs.bale.ai/#payments">Pay button</a>.
      * \return the requested button as Array.
      */
     public function buildInlineKeyboardButton(
@@ -1278,9 +1254,9 @@ class BaleBot
     /// Send an invoice
 
     /**
-     * See <a href="https://core.telegram.org/bots/api#sendinvoice">sendInvoice</a> for the input values
+     * See <a href="https://docs.bale.ai/#sendinvoice">sendInvoice</a> for the input values
      * \param $content the request parameters as array
-     * \return the JSON Telegram's reply.
+     * \return the JSON Bale's reply.
      */
     public function sendInvoice(array $content)
     {
@@ -1290,9 +1266,9 @@ class BaleBot
     /// Answer a shipping query
 
     /**
-     * See <a href="https://core.telegram.org/bots/api#answershippingquery">answerShippingQuery</a> for the input values
+     * See <a href="https://docs.bale.ai/#answershippingquery">answerShippingQuery</a> for the input values
      * \param $content the request parameters as array
-     * \return the JSON Telegram's reply.
+     * \return the JSON Bale's reply.
      */
     public function answerShippingQuery(array $content)
     {
@@ -1302,9 +1278,9 @@ class BaleBot
     /// Answer a PreCheckout query
 
     /**
-     * See <a href="https://core.telegram.org/bots/api#answerprecheckoutquery">answerPreCheckoutQuery</a> for the input values
+     * See <a href="https://docs.bale.ai/#answerprecheckoutquery">answerPreCheckoutQuery</a> for the input values
      * \param $content the request parameters as array
-     * \return the JSON Telegram's reply.
+     * \return the JSON Bale's reply.
      */
     public function answerPreCheckoutQuery(array $content)
     {
@@ -1314,9 +1290,9 @@ class BaleBot
     /// Set Passport data errors
 
     /**
-     * See <a href="https://core.telegram.org/bots/api#setpassportdataerrors">setPassportDataErrors</a> for the input values
+     * See <a href="https://docs.bale.ai/#setpassportdataerrors">setPassportDataErrors</a> for the input values
      * \param $content the request parameters as array
-     * \return the JSON Telegram's reply.
+     * \return the JSON Bale's reply.
      */
     public function setPassportDataErrors(array $content)
     {
@@ -1326,9 +1302,9 @@ class BaleBot
     /// Send a Game
 
     /**
-     * See <a href="https://core.telegram.org/bots/api#sendgame">sendGame</a> for the input values
+     * See <a href="https://docs.bale.ai/#sendgame">sendGame</a> for the input values
      * \param $content the request parameters as array
-     * \return the JSON Telegram's reply.
+     * \return the JSON Bale's reply.
      */
     public function sendGame(array $content)
     {
@@ -1338,9 +1314,9 @@ class BaleBot
     /// Send a video note
 
     /**
-     * See <a href="https://core.telegram.org/bots/api#sendvideonote">sendVideoNote</a> for the input values
+     * See <a href="https://docs.bale.ai/#sendvideonote">sendVideoNote</a> for the input values
      * \param $content the request parameters as array
-     * \return the JSON Telegram's reply.
+     * \return the JSON Bale's reply.
      */
     public function sendVideoNote(array $content)
     {
@@ -1350,9 +1326,9 @@ class BaleBot
     /// Restrict Chat Member
 
     /**
-     * See <a href="https://core.telegram.org/bots/api#restrictchatmember">restrictChatMember</a> for the input values
+     * See <a href="https://docs.bale.ai/#restrictchatmember">restrictChatMember</a> for the input values
      * \param $content the request parameters as array
-     * \return the JSON Telegram's reply.
+     * \return the JSON Bale's reply.
      */
     public function restrictChatMember(array $content)
     {
@@ -1362,9 +1338,9 @@ class BaleBot
     /// Promote Chat Member
 
     /**
-     * See <a href="https://core.telegram.org/bots/api#promotechatmember">promoteChatMember</a> for the input values
+     * See <a href="https://docs.bale.ai/#promotechatmember">promoteChatMember</a> for the input values
      * \param $content the request parameters as array
-     * \return the JSON Telegram's reply.
+     * \return the JSON Bale's reply.
      */
     public function promoteChatMember(array $content)
     {
@@ -1374,9 +1350,9 @@ class BaleBot
     /// Set chat Administrator custom title
 
     /**
-     * See <a href="https://core.telegram.org/bots/api#setchatadministratorcustomtitle">setChatAdministratorCustomTitle</a> for the input values
+     * See <a href="https://docs.bale.ai/#setchatadministratorcustomtitle">setChatAdministratorCustomTitle</a> for the input values
      * \param $content the request parameters as array
-     * \return the JSON Telegram's reply.
+     * \return the JSON Bale's reply.
      */
     public function setChatAdministratorCustomTitle(array $content)
     {
@@ -1386,9 +1362,9 @@ class BaleBot
     /// Ban a channel chat in a super group or channel
 
     /**
-     * See <a href="https://core.telegram.org/bots/api#banchatsenderchat">banChatSenderChat</a> for the input values
+     * See <a href="https://docs.bale.ai/#banchatsenderchat">banChatSenderChat</a> for the input values
      * \param $content the request parameters as array
-     * \return the JSON Telegram's reply.
+     * \return the JSON Bale's reply.
      */
     public function banChatSenderChat(array $content)
     {
@@ -1398,9 +1374,9 @@ class BaleBot
     /// Unban a channel chat in a super group or channel
 
     /**
-     * See <a href="https://core.telegram.org/bots/api#unbanchatsenderchat">unbanChatSenderChat</a> for the input values
+     * See <a href="https://docs.bale.ai/#unbanchatsenderchat">unbanChatSenderChat</a> for the input values
      * \param $content the request parameters as array
-     * \return the JSON Telegram's reply.
+     * \return the JSON Bale's reply.
      */
     public function unbanChatSenderChat(array $content)
     {
@@ -1410,9 +1386,9 @@ class BaleBot
     /// Set default chat permission for all members
 
     /**
-     * See <a href="https://core.telegram.org/bots/api#setchatpermissions">setChatPermissions</a> for the input values
+     * See <a href="https://docs.bale.ai/#setchatpermissions">setChatPermissions</a> for the input values
      * \param $content the request parameters as array
-     * \return the JSON Telegram's reply.
+     * \return the JSON Bale's reply.
      */
     public function setChatPermissions(array $content)
     {
@@ -1422,9 +1398,9 @@ class BaleBot
     //// Export Chat Invite Link
 
     /**
-     * See <a href="https://core.telegram.org/bots/api#exportchatinvitelink">exportChatInviteLink</a> for the input values
+     * See <a href="https://docs.bale.ai/#exportchatinvitelink">exportChatInviteLink</a> for the input values
      * \param $content the request parameters as array
-     * \return the JSON Telegram's reply.
+     * \return the JSON Bale's reply.
      */
     public function exportChatInviteLink(array $content)
     {
@@ -1434,9 +1410,9 @@ class BaleBot
     //// Create Chat Invite Link
 
     /**
-     * See <a href="https://core.telegram.org/bots/api#createchatinvitelink">createChatInviteLink</a> for the input values
+     * See <a href="https://docs.bale.ai/#createchatinvitelink">createChatInviteLink</a> for the input values
      * \param $content the request parameters as array
-     * \return the JSON Telegram's reply.
+     * \return the JSON Bale's reply.
      */
     public function createChatInviteLink(array $content)
     {
@@ -1446,9 +1422,9 @@ class BaleBot
     //// Edit Chat Invite Link
 
     /**
-     * See <a href="https://core.telegram.org/bots/api#editchatinvitelink">editChatInviteLink</a> for the input values
+     * See <a href="https://docs.bale.ai/#editchatinvitelink">editChatInviteLink</a> for the input values
      * \param $content the request parameters as array
-     * \return the JSON Telegram's reply.
+     * \return the JSON Bale's reply.
      */
     public function editChatInviteLink(array $content)
     {
@@ -1458,9 +1434,9 @@ class BaleBot
     //// Revoke Chat Invite Link
 
     /**
-     * See <a href="https://core.telegram.org/bots/api#revokechatinvitelink">revokeChatInviteLink</a> for the input values
+     * See <a href="https://docs.bale.ai/#revokechatinvitelink">revokeChatInviteLink</a> for the input values
      * \param $content the request parameters as array
-     * \return the JSON Telegram's reply.
+     * \return the JSON Bale's reply.
      */
     public function revokeChatInviteLink(array $content)
     {
@@ -1470,9 +1446,9 @@ class BaleBot
     //// Approve chat join request
 
     /**
-     * See <a href="https://core.telegram.org/bots/api#approvechatjoinrequest">approveChatJoinRequest</a> for the input values
+     * See <a href="https://docs.bale.ai/#approvechatjoinrequest">approveChatJoinRequest</a> for the input values
      * \param $content the request parameters as array
-     * \return the JSON Telegram's reply.
+     * \return the JSON Bale's reply.
      */
     public function approveChatJoinRequest(array $content)
     {
@@ -1482,9 +1458,9 @@ class BaleBot
     //// Decline chat join request
 
     /**
-     * See <a href="https://core.telegram.org/bots/api#declinechatjoinrequest">declineChatJoinRequest</a> for the input values
+     * See <a href="https://docs.bale.ai/#declinechatjoinrequest">declineChatJoinRequest</a> for the input values
      * \param $content the request parameters as array
-     * \return the JSON Telegram's reply.
+     * \return the JSON Bale's reply.
      */
     public function declineChatJoinRequest(array $content)
     {
@@ -1494,9 +1470,9 @@ class BaleBot
     /// Set Chat Photo
 
     /**
-     * See <a href="https://core.telegram.org/bots/api#setchatphoto">setChatPhoto</a> for the input values
+     * See <a href="https://docs.bale.ai/#setchatphoto">setChatPhoto</a> for the input values
      * \param $content the request parameters as array
-     * \return the JSON Telegram's reply.
+     * \return the JSON Bale's reply.
      */
     public function setChatPhoto(array $content)
     {
@@ -1506,9 +1482,9 @@ class BaleBot
     /// Delete Chat Photo
 
     /**
-     * See <a href="https://core.telegram.org/bots/api#deletechatphoto">deleteChatPhoto</a> for the input values
+     * See <a href="https://docs.bale.ai/#deletechatphoto">deleteChatPhoto</a> for the input values
      * \param $content the request parameters as array
-     * \return the JSON Telegram's reply.
+     * \return the JSON Bale's reply.
      */
     public function deleteChatPhoto(array $content)
     {
@@ -1518,9 +1494,9 @@ class BaleBot
     /// Set Chat Title
 
     /**
-     * See <a href="https://core.telegram.org/bots/api#setchattitle">setChatTitle</a> for the input values
+     * See <a href="https://docs.bale.ai/#setchattitle">setChatTitle</a> for the input values
      * \param $content the request parameters as array
-     * \return the JSON Telegram's reply.
+     * \return the JSON Bale's reply.
      */
     public function setChatTitle(array $content)
     {
@@ -1530,9 +1506,9 @@ class BaleBot
     /// Set Chat Description
 
     /**
-     * See <a href="https://core.telegram.org/bots/api#setchatdescription">setChatDescription</a> for the input values
+     * See <a href="https://docs.bale.ai/#setchatdescription">setChatDescription</a> for the input values
      * \param $content the request parameters as array
-     * \return the JSON Telegram's reply.
+     * \return the JSON Bale's reply.
      */
     public function setChatDescription(array $content)
     {
@@ -1542,9 +1518,9 @@ class BaleBot
     /// Pin Chat Message
 
     /**
-     * See <a href="https://core.telegram.org/bots/api#pinchatmessage">pinChatMessage</a> for the input values
+     * See <a href="https://docs.bale.ai/#pinchatmessage">pinChatMessage</a> for the input values
      * \param $content the request parameters as array
-     * \return the JSON Telegram's reply.
+     * \return the JSON Bale's reply.
      */
     public function pinChatMessage(array $content)
     {
@@ -1554,9 +1530,9 @@ class BaleBot
     /// Unpin Chat Message
 
     /**
-     * See <a href="https://core.telegram.org/bots/api#unpinchatmessage">unpinChatMessage</a> for the input values
+     * See <a href="https://docs.bale.ai/#unpinchatmessage">unpinChatMessage</a> for the input values
      * \param $content the request parameters as array
-     * \return the JSON Telegram's reply.
+     * \return the JSON Bale's reply.
      */
     public function unpinChatMessage(array $content)
     {
@@ -1566,9 +1542,9 @@ class BaleBot
     /// Unpin All Chat Messages
 
     /**
-     * See <a href="https://core.telegram.org/bots/api#unpinallchatmessages">unpinAllChatMessages</a> for the input values
+     * See <a href="https://docs.bale.ai/#unpinallchatmessages">unpinAllChatMessages</a> for the input values
      * \param $content the request parameters as array
-     * \return the JSON Telegram's reply.
+     * \return the JSON Bale's reply.
      */
     public function unpinAllChatMessages(array $content)
     {
@@ -1578,9 +1554,9 @@ class BaleBot
     /// Get Sticker Set
 
     /**
-     * See <a href="https://core.telegram.org/bots/api#getstickerset">getStickerSet</a> for the input values
+     * See <a href="https://docs.bale.ai/#getstickerset">getStickerSet</a> for the input values
      * \param $content the request parameters as array
-     * \return the JSON Telegram's reply.
+     * \return the JSON Bale's reply.
      */
     public function getStickerSet(array $content)
     {
@@ -1590,9 +1566,9 @@ class BaleBot
     /// Upload Sticker File
 
     /**
-     * See <a href="https://core.telegram.org/bots/api#uploadstickerfile">uploadStickerFile</a> for the input values
+     * See <a href="https://docs.bale.ai/#uploadstickerfile">uploadStickerFile</a> for the input values
      * \param $content the request parameters as array
-     * \return the JSON Telegram's reply.
+     * \return the JSON Bale's reply.
      */
     public function uploadStickerFile(array $content)
     {
@@ -1602,9 +1578,9 @@ class BaleBot
     /// Create New Sticker Set
 
     /**
-     * See <a href="https://core.telegram.org/bots/api#createnewstickerset">createNewStickerSet</a> for the input values
+     * See <a href="https://docs.bale.ai/#createnewstickerset">createNewStickerSet</a> for the input values
      * \param $content the request parameters as array
-     * \return the JSON Telegram's reply.
+     * \return the JSON Bale's reply.
      */
     public function createNewStickerSet(array $content)
     {
@@ -1614,9 +1590,9 @@ class BaleBot
     /// Add Sticker To Set
 
     /**
-     * See <a href="https://core.telegram.org/bots/api#addstickertoset">addStickerToSet</a> for the input values
+     * See <a href="https://docs.bale.ai/#addstickertoset">addStickerToSet</a> for the input values
      * \param $content the request parameters as array
-     * \return the JSON Telegram's reply.
+     * \return the JSON Bale's reply.
      */
     public function addStickerToSet(array $content)
     {
@@ -1626,9 +1602,9 @@ class BaleBot
     /// Set Sticker Position In Set
 
     /**
-     * See <a href="https://core.telegram.org/bots/api#setstickerpositioninset">setStickerPositionInSet</a> for the input values
+     * See <a href="https://docs.bale.ai/#setstickerpositioninset">setStickerPositionInSet</a> for the input values
      * \param $content the request parameters as array
-     * \return the JSON Telegram's reply.
+     * \return the JSON Bale's reply.
      */
     public function setStickerPositionInSet(array $content)
     {
@@ -1638,9 +1614,9 @@ class BaleBot
     /// Delete Sticker From Set
 
     /**
-     * See <a href="https://core.telegram.org/bots/api#deletestickerfromset">deleteStickerFromSet</a> for the input values
+     * See <a href="https://docs.bale.ai/#deletestickerfromset">deleteStickerFromSet</a> for the input values
      * \param $content the request parameters as array
-     * \return the JSON Telegram's reply.
+     * \return the JSON Bale's reply.
      */
     public function deleteStickerFromSet(array $content)
     {
@@ -1650,9 +1626,9 @@ class BaleBot
     /// Set Sticker Thumb From Set
 
     /**
-     * See <a href="https://core.telegram.org/bots/api#setstickersetthumb">setStickerSetThumb</a> for the input values
+     * See <a href="https://docs.bale.ai/#setstickersetthumb">setStickerSetThumb</a> for the input values
      * \param $content the request parameters as array
-     * \return the JSON Telegram's reply.
+     * \return the JSON Bale's reply.
      */
     public function setStickerSetThumb(array $content)
     {
@@ -1662,9 +1638,9 @@ class BaleBot
     /// Delete a message
 
     /**
-     * See <a href="https://core.telegram.org/bots/api#deletemessage">deleteMessage</a> for the input values
+     * See <a href="https://docs.bale.ai/#deletemessage">deleteMessage</a> for the input values
      * \param $content the request parameters as array
-     * \return the JSON Telegram's reply.
+     * \return the JSON Bale's reply.
      */
     public function deleteMessage(array $content)
     {
