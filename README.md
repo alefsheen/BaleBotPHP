@@ -30,23 +30,23 @@ Download
 
 From your project directory, run:
 ```
-composer require eleirbag89/telegrambotphp
+composer require alefsheen/balebotphp
 ```
 or
 ```
-php composer.phar require eleirbag89/telegrambotphp
+php composer.phar require alefsheen/balebotphp
 ```
 Note: If you don't have Composer you can download it [HERE](https://getcomposer.org/download/).
 
 #### Using release archives
 
-https://github.com/Eleirbag89/TelegramBotPHP/releases
+https://github.com/alefsheen/BaleBotPHP/releases
 
 #### Using Git
 
 From a project directory, run:
 ```
-git clone https://github.com/Eleirbag89/TelegramBotPHP.git
+git clone https://github.com/alefsheen/BaleBotPHP.git
 ```
 
 Installation
@@ -58,36 +58,36 @@ After downloading by using Composer, you can include Composer's autoloader:
 ```php
 include (__DIR__ . '/vendor/autoload.php');
 
-$telegram = new Telegram('YOUR TELEGRAM TOKEN HERE');
+$BaleBot = new BaleBot('YOUR BOT TOKEN HERE');
 ```
 
-#### Via TelegramBotPHP class
+#### Via BaleBot class
 
 Copy Telegram.php into your server and include it in your new bot script:
 ```php
-include 'Telegram.php';
+include 'BaleBot.php';
 
-$telegram = new Telegram('YOUR TELEGRAM TOKEN HERE');
+$balebot = new BaleBot('YOUR BOT TOKEN HERE');
 ```
 
-Note: To enable error log file, also copy TelegramErrorLogger.php in the same directory of Telegram.php file.
+Note: To enable error log file, also copy BaleBotErrorLogger.php in the same directory of BaleBot.php file.
 
 Configuration (WebHook)
 ---------
 
 Navigate to 
-https://api.telegram.org/bot(BOT_TOKEN)/setWebhook?url=https://yoursite.com/your_update.php
-Or use the Telegram class setWebhook method.
+https://tapi.bale.ai/bot(BOT_TOKEN)/setWebhook?url=https://yoursite.com/your_update.php
+Or use the BaleBot class setWebhook method.
 
 Examples
 ---------
 
 ```php
-$telegram = new Telegram('YOUR TELEGRAM TOKEN HERE');
+$balebot = new BaleBot('YOUR BOT TOKEN HERE');
 
-$chat_id = $telegram->ChatID();
+$chat_id = $balebot->ChatID();
 $content = array('chat_id' => $chat_id, 'text' => 'Test');
-$telegram->sendMessage($content);
+$balebot->sendMessage($content);
 ```
 
 If you want to get some specific parameter from the Telegram response:
