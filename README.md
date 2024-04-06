@@ -1,5 +1,5 @@
 # BaleBotPHP
-[![API](https://img.shields.io/badge/BaleBotPHP.svg)](https://core.telegram.org/bots/api)
+[![API](https://img.shields.io/badge/Bale API-0ac99b.svg)](https://docs.bale.ai)
 ![PHP](https://img.shields.io/badge/php-%3E%3D5.3-8892bf.svg)
 ![CURL](https://img.shields.io/badge/cURL-required-green.svg)
 
