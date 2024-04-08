@@ -9,7 +9,7 @@ include 'BaleBot.php';
 // Set the bot TOKEN
 $bot_token = 'bot_token';
 // Instances the class
-$telegram = new Telegram($bot_token);
+$telegram = new BaleBot($bot_token);
 
 /* If you need to manually take some parameters
 *  $result = $telegram->getData();
