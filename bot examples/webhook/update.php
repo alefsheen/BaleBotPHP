@@ -4,7 +4,7 @@
  *
  * @author Gabriele Grillo <gabry.grillo@alice.it>
  */
-include 'Telegram.php';
+include 'BaleBot.php';
 
 // Set the bot TOKEN
 $bot_token = 'bot_token';
