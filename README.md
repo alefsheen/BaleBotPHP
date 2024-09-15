@@ -18,7 +18,7 @@ Requirements
 * Bale API key, you can get one simply with [@BotFather](https://ble.ir/botfather) with simple commands right after creating your bot.
 
 For the WebHook:
-* An VALID SSL certificate (Bale API requires this). You can use CDNs such as arvancloud or cloudflare which gives free ssl services.
+* A VALID SSL certificate (Bale API requires this). You can use CDNs such as arvancloud or cloudflare which gives free ssl services.
 
 For the getUpdates(Long Polling):
 * Some way to execute the script in order to serve messages (for example cronjob)
