@@ -1,4 +1,5 @@
 <?php
+namespace alefsheen\BaleBotPHP;
 
 if (file_exists('BaleBotErrorLogger.php')) {
     require_once 'BaleBotErrorLogger.php';
