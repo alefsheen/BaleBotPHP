@@ -18,7 +18,6 @@
     "autoload": {
         "psr-4": {
             "alefsheen\\BaleBotPHP\\": "src"
-        },
-        "files": ["BaleBot.php", "BaleBotErrorLogger.php"]
+        }
     }
 }
